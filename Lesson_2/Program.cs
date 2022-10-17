@@ -48,7 +48,9 @@ bool IsSquare(int firstInt, int secondInt)
     else return false;
 }
 
+Console.WriteLine("Enter first number:");
 int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter second number:");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 bool result = IsSquare(number1, number2);
@@ -64,9 +66,33 @@ bool IsDiv(int firstInt, int secondInt)
     else return false;
 }
 
+
+Console.WriteLine("Enter first number:");
 int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter second number:");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 bool result = IsDiv(number1, number2);
 Console.WriteLine(result);
 */
+
+// Extra task
+// Напишите программу, которая принимает на вход три целых числа(a, m, n) и проверяет, кратно ли число a одновременно m и n
+
+bool IsDivSecond(int firstInt, int secondInt, int thirdInt)
+{
+    if (firstInt % secondInt == 0 && firstInt % thirdInt == 0) return true;
+    return false;
+}
+
+Console.WriteLine("Enter first number:");
+int a = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter second number:");
+int m = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter third number:");
+int n = Convert.ToInt32(Console.ReadLine());
+
+bool result = IsDivSecond(a, m, n);
+Console.WriteLine(result);
