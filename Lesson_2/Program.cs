@@ -48,9 +48,9 @@ bool IsSquare(int firstInt, int secondInt)
     else return false;
 }
 
-Console.WriteLine("Enter first number:");
+Console.Write("Enter first number:");
 int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter second number:");
+Console.Write("Enter second number:");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 bool result = IsSquare(number1, number2);
@@ -67,9 +67,9 @@ bool IsDiv(int firstInt, int secondInt)
 }
 
 
-Console.WriteLine("Enter first number:");
+Console.Write("Enter first number: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter second number:");
+Console.Write("Enter second number: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 bool result = IsDiv(number1, number2);
@@ -85,13 +85,13 @@ bool IsDivSecond(int firstInt, int secondInt, int thirdInt)
     return false;
 }
 
-Console.WriteLine("Enter first number:");
+Console.Write("Enter first number: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Enter second number:");
+Console.Write("Enter second number: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Enter third number:");
+Console.Write("Enter third number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 bool result = IsDivSecond(a, m, n);
